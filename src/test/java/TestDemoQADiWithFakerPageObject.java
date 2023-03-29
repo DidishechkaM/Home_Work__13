@@ -1,10 +1,13 @@
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
+
 import static randomUtils.RandomUtils.*;
 import static randomUtils.TestData.*;
-public class TestDemoQADiWithFakerPageObject {
-    public class TestDemoQADiWithFakerPageObject extends TestBase {
+@Tag("Faker")
+public class TestDemoQADiWithFakerPageObject extends TestBase {
 
 
         @Test
@@ -57,4 +60,4 @@ public class TestDemoQADiWithFakerPageObject {
         }
     }
 
-}
+

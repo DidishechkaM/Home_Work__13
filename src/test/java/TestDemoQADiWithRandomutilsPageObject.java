@@ -37,7 +37,7 @@ public class TestDemoQADiWithRandomutilsPageObject extends TestBase {
         registrationPage.verifyValueTable("Address", "Address");
         registrationPage.verifyValueTable("State and City", "Uttar Pradesh Agra");
         registrationPage.closeModal();
-        //
+
     }
 
 }
