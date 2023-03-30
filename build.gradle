@@ -25,3 +25,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+task tests(type: Test) {
+    useJUnitPlatform {
+        includeTags("PageObject")
+    }
+}

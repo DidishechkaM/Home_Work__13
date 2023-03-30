@@ -1,12 +1,13 @@
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
 import static randomUtils.RandomUtils.*;
 import static randomUtils.TestData.*;
-@Tag("Faker")
+@Disabled("Late")
 public class TestDemoQADiWithFakerPageObject extends TestBase {
 
 
