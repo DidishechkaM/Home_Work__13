@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-//@Tag("PageObject")
+@Tag("PageObject")
 public class TestDemoQADiWithPageObject extends TestBase {
 
     String userName = "Dian",
