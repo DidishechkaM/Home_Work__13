@@ -1,5 +1,8 @@
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+
+import static io.qameta.allure.Allure.step;
 
 public class TestDemoQADiWithPageObject extends TestBase {
 
@@ -10,10 +13,12 @@ public class TestDemoQADiWithPageObject extends TestBase {
     @Test
     @Tag("remote")
     void fillTest() {
-
+step("Open form",()->{
         registrationPage.openPage()
-                .executeJS()
-                .setFirsName(userName)
+                .executeJS();
+});
+
+        registrationPage.setFirsName(userName)
                 .setLastName(lastNme)
                 .setEmail(userEmail)
                 .setGender("Female")
