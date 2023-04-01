@@ -17,7 +17,7 @@ step("Open form",()->{
         registrationPage.openPage()
                 .executeJS();
 });
-
+        step("Input date",()->{
         registrationPage.setFirsName(userName)
                 .setLastName(lastNme)
                 .setEmail(userEmail)
@@ -31,6 +31,8 @@ step("Open form",()->{
                 .setState("Uttar Pradesh")
                 .setstateCity("Agra")
                 .submitclick();
+        });
+        step("Verify result",()->{
         registrationPage.verifiability();
         registrationPage.verifyValueTable("Student Name", userName + lastNme);
         registrationPage.verifyValueTable("Student Email", userEmail);
@@ -43,6 +45,7 @@ step("Open form",()->{
         registrationPage.verifyValueTable("Address", "Address");
         registrationPage.verifyValueTable("State and City", "Uttar Pradesh Agra");
         registrationPage.closeModal();
+        });
     }
 
 }
